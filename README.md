@@ -60,6 +60,14 @@ Alternatively, we also provide a version of Dyna-1 based on ESM-2. To run infere
 python dyna1-esm2.py --sequence <SEQUENCE> --name <NAME>
 ```
 
+# Evaluation
+
+Here's an example call for running `eval.py` for datasets used to evaluate in paper. Dataset code words are `test`, `relaxdb`, `cpmg`
+
+```
+python eval.py relaxdb --method esm3_seqstruct --seq --struct  --layer 22 --weights_dir /path/to/weights --save_dir /path/to/save/dir/relaxdb
+```
+
 # Visualization
 
 We visualize probabilities of exchange on protein structures using [PyMol](https://www.pymol.org). To re-create the putty visualization on your protein, import the pdb file into PyMol and copy-paste the following commands into the PyMol command line:
