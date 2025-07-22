@@ -65,10 +65,10 @@ python dyna1-esm2.py --sequence <SEQUENCE> --name <NAME>
 Here's an example call for running `eval.py` for datasets used to evaluate in paper. 
 
 ```
-python eval.py <dataset> --method <method_name> --seq --struct  --layer 22 --weights_dir /path/to/weights --save_dir /path/to/save/dir
+python eval.py <dataset> --method <method_name> --seq --struct --layer 22 --weights_dir /path/to/weights --save_dir /path/to/save/dir
 ```
 
-Dataset code words are `val`, `test`, `relaxdb`, `cpmg`. To successfully run, make sure to add the name for the method (e.g. `esm2` or `esm3_seqstruct`). Additionally, default runs include all types of indicators of "exchange"; there are flags to evaluate on subsets of exchange for the relaxdb datasets: `--unsuppressed` `--missing_only` and `--rex_only`. 
+Dataset code words are `relaxdb` or `cpmg`. To successfully run, make sure to add the name for the method (e.g. `esm2` or `esm3_seqstruct`). Additionally, default runs include all types of indicators of "exchange"; there are flags to evaluate on subsets of exchange for the relaxdb datasets: `--unsuppressed` `--missing_only` and `--rex_only`. 
 
 
 # Visualization
