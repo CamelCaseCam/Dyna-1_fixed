@@ -18,3 +18,4 @@
   torcheval
   mdtraj
   MDAnalysis
+  huggingface-hub<1.0
